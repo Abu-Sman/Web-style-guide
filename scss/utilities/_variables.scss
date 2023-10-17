@@ -1,0 +1,26 @@
+//////////////////////////////////
+/// VARIABLES
+
+// colors
+$color-primary: #58e1c1;
+$color-secondary: #51ddfc;
+
+$color-gray-dark: #777;
+$color-gray-light: #ccc;
+
+$color-white: #fff;
+
+// border radius
+$border-radius-small: 5px;
+
+// media query breakpoint
+$break: 768px;
+
+// theme bg-colors
+$themes: (
+  "default": #51ddfc,
+  "error": #e4757a,
+  "info": #927bc1,
+  "success": #63cc82,
+  "warning": #fd7856,
+);

@@ -1,0 +1,25 @@
+//////////////////////////////
+/// MIXINS
+
+// media query
+@mixin big-device {
+  @media screen and (min-width: $break) {
+    @content;
+  }
+}
+
+// center items
+@mixin center($max-width: null) {
+  max-width: $max-width;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// flex items
+@mixin flexy($disp: null, $dir: null, $align: null, $just: null) {
+  display: $disp;
+  align-items: $align;
+  justify-content: $just;
+  flex-direction: $dir;
+}

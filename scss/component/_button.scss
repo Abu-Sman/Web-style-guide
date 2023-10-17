@@ -1,0 +1,33 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  color: $color-white;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: $border-radius-small;
+
+  @include big-device {
+    padding: 10px 30px;
+  }
+
+  + .btn {
+    @include big-device {
+      margin-left: 10px;
+    }
+  }
+}
+
+@each $theme, $bgcol in $themes {
+  .#{$theme} {
+    background-color: $bgcol;
+
+    &:hover {
+      background-color: lighten($bgcol, 15%);
+    }
+  }
+}

@@ -1,0 +1,7 @@
+//////////////////////////////
+/// FUNCTIONS
+
+// calculate flex basis
+@function calc-basis($column) {
+  @return ($column * 8.33) * 1%;
+}

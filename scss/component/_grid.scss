@@ -1,0 +1,63 @@
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+
+.container {
+  padding: 0 10px;
+
+  @include big-device {
+    @include center($max-width: 1400px);
+  }
+}
+
+.row {
+  @include flexy($disp: flex, $dir: column);
+  padding: 1em 10px;
+
+  @include big-device {
+    @include flexy($dir: row);
+  }
+}
+
+[class^="col"] {
+  margin-top: 10px;
+  flex-basis: 100%;
+  min-height: 25px;
+  padding: 10px;
+  border-radius: $border-radius-small;
+
+  @include big-device {
+    @include flexy($disp: flex, $align: center, $just: center);
+    margin-top: 0;
+  }
+
+  + [class^="col"] {
+    @include big-device {
+      margin-left: 10px;
+    }
+  }
+}
+
+.centered {
+  @include big-device {
+    @include center;
+  }
+}
+
+@for $i from 1 through 12 {
+  .theme.col-#{$i} {
+    background-color: adjust-hue(tomato, $i * 30);
+  }
+}
+
+@include big-device {
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      flex-basis: calc-basis($i);
+    }
+  }
+}
+
+.card {
+  flex-basis: 100%;
+}
