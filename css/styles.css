@@ -447,6 +447,14 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .row {
   display: flex;
   flex-direction: column;
@@ -479,60 +487,52 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .theme.col-1 {
-  background-color: #ffbf47;
+  background-color: #927bc1;
 }
 
 .theme.col-2 {
-  background-color: #e3ff47;
+  background-color: #fd7856;
 }
 
 .theme.col-3 {
-  background-color: #87ff47;
+  background-color: #deb2ee;
 }
 
 .theme.col-4 {
-  background-color: #47ff63;
+  background-color: #7ee6fd;
 }
 
 .theme.col-5 {
-  background-color: #47ffbf;
+  background-color: #88d9a0;
 }
 
 .theme.col-6 {
-  background-color: #47e3ff;
+  background-color: #4da2bb;
 }
 
 .theme.col-7 {
-  background-color: #4787ff;
+  background-color: #ec9fa3;
 }
 
 .theme.col-8 {
-  background-color: #6347ff;
+  background-color: #fd9f85;
 }
 
 .theme.col-9 {
-  background-color: #bf47ff;
+  background-color: #e4757a;
 }
 
 .theme.col-10 {
-  background-color: #ff47e3;
+  background-color: #63cc82;
 }
 
 .theme.col-11 {
-  background-color: #ff4787;
+  background-color: #51ddfc;
 }
 
 .theme.col-12 {
-  background-color: tomato;
+  background-color: #80e8d1;
 }
 
 @media screen and (min-width: 768px) {
